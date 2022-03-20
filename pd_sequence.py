@@ -1,4 +1,3 @@
-
 ANSI_BLACK = "\u001b[30m"
 ANSI_RED = "\u001b[31m"
 ANSI_GREEN = "\u001b[32m"
@@ -22,3 +21,39 @@ ANSI_RESET = "\u001b[0m"
 ANSI_BOLD = "\u001b[1m"
 ANSI_UNDERLINE = "\u001b[4m"
 ANSI_REVERSED = "\u001b[7m"
+
+
+def bold(text):
+    return ANSI_BOLD + text + ANSI_RESET
+
+
+def underline(text):
+    return ANSI_UNDERLINE + text + ANSI_RESET
+
+
+def reverse(text):
+    return ANSI_REVERSED + text + ANSI_RESET
+
+
+ANSI_ALL = [
+    ANSI_BLACK,
+    ANSI_RED,
+    ANSI_GREEN,
+    ANSI_YELLOW,
+    ANSI_BLUE,
+    ANSI_MAGENTA,
+    ANSI_CYAN,
+    ANSI_WHITE,
+    ANSI_BRIGHT_BLACK,
+    ANSI_BRIGHT_RED,
+    ANSI_BRIGHT_GREEN,
+    ANSI_BRIGHT_YELLOW,
+    ANSI_BRIGHT_BLUE,
+    ANSI_BRIGHT_MAGENTA,
+    ANSI_BRIGHT_CYAN,
+    ANSI_BRIGHT_WHITE,
+    ANSI_RESET,
+    ANSI_BOLD,
+    ANSI_UNDERLINE,
+    ANSI_REVERSED,
+]
