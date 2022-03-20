@@ -22,19 +22,6 @@ ANSI_BOLD = "\u001b[1m"
 ANSI_UNDERLINE = "\u001b[4m"
 ANSI_REVERSED = "\u001b[7m"
 
-
-def bold(text):
-    return ANSI_BOLD + text + ANSI_RESET
-
-
-def underline(text):
-    return ANSI_UNDERLINE + text + ANSI_RESET
-
-
-def reverse(text):
-    return ANSI_REVERSED + text + ANSI_RESET
-
-
 ANSI_ALL = [
     ANSI_BLACK,
     ANSI_RED,
