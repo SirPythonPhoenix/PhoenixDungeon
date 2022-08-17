@@ -2,7 +2,10 @@ import f_interface as interface
 from f_textgenerator import error, attention
 import os
 import ctypes
-import msvcrt
+try:
+    import msvcrt
+except ModuleNotFoundError:
+    exit("ERROR | Currently only windows is supported.")
 import subprocess
 from ctypes import wintypes
 
